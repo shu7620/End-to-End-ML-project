@@ -4,3 +4,5 @@ pyproject.toml
 uv.lock
 .venv
 src/MLFLOW_Workspace.egg-info/
+logs/
+src/mlProject/__pycache__/
