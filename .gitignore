@@ -6,3 +6,5 @@ uv.lock
 src/MLFLOW_Workspace.egg-info/
 logs/
 src/mlProject/__pycache__/
+artifacts
+logs
