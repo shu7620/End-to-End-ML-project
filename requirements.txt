@@ -12,5 +12,6 @@ joblib
 types-pyYAML
 Flask
 Flask-cors
+dagshub
 
 -e .
