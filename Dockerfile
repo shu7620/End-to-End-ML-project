@@ -8,13 +8,10 @@ RUN apt-get update -y && \
 
 WORKDIR /app
 
-# 3. Copy ONLY requirements.txt first to leverage Docker layer caching
-COPY requirements.txt .
+# 3. Copy ALL application code first (needed for -e . to work)
+COPY . .
 
 # 4. Install dependencies with --no-cache-dir to save space
 RUN pip install --no-cache-dir -r requirements.txt
-
-# 5. Copy the rest of the application code AFTER dependencies are installed
-COPY . .
 
 CMD ["python", "app.py"]
